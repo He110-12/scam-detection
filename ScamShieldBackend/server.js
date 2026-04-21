@@ -21,6 +21,14 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 app.use("/downloads", express.static(path.join(__dirname, "public")));
 app.use("/app", express.static(path.join(__dirname, "public", "dist")));
 
+// Fallback: serve PWA index.html for all /app/* routes (SPA deep-link support)
+app.get("/app", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "dist", "index.html"));
+});
+app.get("/app/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "dist", "index.html"));
+});
+
 // Dedicated Download Route with proper MIME headers
 app.get("/download-apk", (req, res) => {
   const filePath = path.join(__dirname, "public", "ScamShield.apk");
