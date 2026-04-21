@@ -6,7 +6,7 @@ import { Platform } from "react-native";
  * Pointing to the local backend server for the Landing Page and APK Download
  * MACHINE IP: 192.168.1.5
  */
-const BACKEND_URL = "http://192.168.1.5:5000"; 
+const BACKEND_URL = "https://cyber-shield-api.onrender.com"; 
 
 export const APP_LINKS = {
   // Direct APK download link from backend (Robust endpoint)
