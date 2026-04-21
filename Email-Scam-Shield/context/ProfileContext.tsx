@@ -64,8 +64,8 @@ const DEFAULT_PROFILE: UserProfile = {
   isDarkMode: true,
   profileType: "Personal",
   scanHistory: [],
-  backendMode: "local",
-  backendUrl: "http://192.168.137.1:5000",
+  backendMode: "remote",
+  backendUrl: "https://cyber-shield-api.onrender.com",
 };
 
 interface ProfileContextType {
