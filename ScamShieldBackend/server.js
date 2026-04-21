@@ -22,10 +22,12 @@ app.use("/downloads", express.static(path.join(__dirname, "public")));
 app.use("/app", express.static(path.join(__dirname, "public", "dist")));
 
 // Fallback: serve PWA index.html for all /app/* routes (SPA deep-link support)
-app.get("/app", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "dist", "index.html"));
-});
-app.get("/app/*", (req, res) => {
+// Note: bare /app/* is invalid in path-to-regexp v8+ (Node 24). Use app.use() instead.
+app.use("/app", (req, res, next) => {
+  const ext = path.extname(req.path);
+  if (ext && ext !== ".html") {
+    return next(); // Let static middleware handle actual assets
+  }
   res.sendFile(path.join(__dirname, "public", "dist", "index.html"));
 });
 
