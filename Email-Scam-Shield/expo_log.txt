@@ -1,0 +1,3 @@
+Starting project at C:\Users\VAMSI KRISHNA\OneDrive\Desktop\scam detection\Email-Scam-Shield
+??? Port 8081 is being used by another process
+??? Skipping dev server

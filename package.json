@@ -1,0 +1,20 @@
+{
+  "name": "email-scam-shield-root",
+  "private": true,
+  "workspaces": [
+    "Email-Scam-Shield"
+  ],
+  "scripts": {
+    "start": "cd Email-Scam-Shield && npm run start",
+    "server": "cd ScamShieldBackend && npm start",
+    "start:all": "start /b npm run server && npm start",
+    "lint": "cd Email-Scam-Shield && npm run lint"
+  },
+  "overrides": {
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native-pager-view": "6.9.1",
+    "react-native-maps": "1.20.1",
+    "expo-glass-effect": "0.1.9"
+  }
+}

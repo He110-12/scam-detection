@@ -1,0 +1,6 @@
+{
+  "extends": "./Email-Scam-Shield/tsconfig.json",
+  "compilerOptions": {
+    "composite": false
+  }
+}

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: cyber-shield-api
+    runtime: node
+    plan: free
+    region: singapore # Closest to India for better latency
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false # User must set this manually in Render dashboard
+      - key: PORT
+        value: 10000

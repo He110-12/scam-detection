@@ -1,0 +1,449 @@
+Build Full Android App – Email Scam Shield
+Build a complete modern Android mobile application called Email Scam Shield.
+The application should detect phishing or scam emails and also educate users through gamification and cybersecurity awareness.
+The output must be a fully working React Native Expo project that can run with:
+Copy code
+
+npx expo start
+The code must be modular and clean so the entire project can later be downloaded and edited in IntelliJ IDEA.
+Technology Stack
+Frontend
+React Native with Expo
+Programming Language
+JavaScript
+Navigation
+React Navigation with swipe gesture navigation
+Game Engine
+React Native Game Engine
+Maps
+React Native Maps
+Animations
+React Native Reanimated and Lottie
+UI
+Custom cyber themed components
+Design Theme
+The app must follow a cybersecurity themed design.
+Background color
+Copy code
+
+#0F172A
+Accent colors
+Copy code
+
+Neon Cyan
+Electric Blue
+Purple Glow
+UI elements should include
+• glowing buttons
+• neon borders
+• rounded cards
+• smooth animations
+• cyberpunk style elements
+Buttons must include:
+• glow animation
+• ripple touch effect
+• shadow glow
+App Screens
+The application must include the following screens:
+1 Splash Screen
+2 Swipeable Dashboards
+3 Email Scanner Screen
+4 Scam Alerts Map + Flashcards
+5 Runner Game Screen
+6 Profile Screen
+Splash Screen
+When the app opens:
+Display an animated cybersecurity shield logo.
+Animation duration
+Copy code
+
+3 to 4 seconds
+Logo animation
+• glowing cyber shield
+• lock symbol in center
+• pulse glow animation
+• scanning line passing across shield
+Text below logo
+Copy code
+
+Email Scam Shield
+AI Powered Protection
+After animation automatically navigate to the dashboards.
+Main Navigation
+After the splash screen display 5 swipeable dashboards.
+Navigation type
+Horizontal swipe.
+Order of dashboards
+Copy code
+
+1 Protection
+2 Email Scanner
+3 Scam Alerts
+4 Cyber Runner Game
+5 Profile
+Dashboard 1 – Protection
+Title
+Copy code
+
+Protection Shield
+Description
+Copy code
+
+Enable protection to scan email notifications for scam patterns
+UI components
+Large cyber styled button
+Copy code
+
+Enable Notification Protection
+When pressed
+Open Android Notification Access Settings.
+Display protection status card
+Copy code
+
+Protection Status
+Enabled / Disabled
+Use cyber themed control panel style.
+Notification Scam Detection Logic
+When an email notification appears:
+The app should read the notification text.
+Only analyze notifications from:
+Copy code
+
+Gmail
+Outlook
+Email apps
+Ignore other apps like
+Copy code
+
+WhatsApp
+SMS
+Telegram
+Scan the notification text for scam indicators.
+Examples
+Copy code
+
+urgent
+verify now
+account suspended
+limited time
+click link
+Detect suspicious domains
+Copy code
+
+.xyz
+.ru
+.top
+If scam detected
+Show full screen popup warning.
+Popup title
+Copy code
+
+⚠ Potential Scam Email Detected
+Display
+Risk meter
+Detected reasons
+Safety advice
+Buttons
+Copy code
+
+Ignore
+Report Scam
+Learn Why
+Dashboard 2 – Manual Email Scanner
+Title
+Copy code
+
+Manual Email Scanner
+UI
+Large text input box where users paste email text.
+Below input show button
+Copy code
+
+Scan Email
+Scanning logic
+Detect
+urgent language
+fake domains
+phishing keywords
+brand impersonation
+Example
+Copy code
+
+paypaI vs paypal
+Result output
+Display risk meter
+Green
+Copy code
+
+Safe
+Yellow
+Copy code
+
+Suspicious
+Red
+Copy code
+
+High Risk
+Display detection reasons in card format.
+Example
+Copy code
+
+Suspicious domain detected
+Urgent language detected
+Also display safety tip.
+Example
+Copy code
+
+Never click unknown verification links
+Dashboard 3 – Scam Alerts Map
+Title
+Copy code
+
+Recent Scam Alerts
+Initial screen should display Map of India using React Native Maps.
+Text instruction
+Copy code
+
+Select your state to view recent scam alerts
+User interaction
+User taps a state.
+After selecting a state
+Copy code
+
+Map should disappear with animation
+Then show scam flashcards related to that state.
+Flashcard Layout
+Header
+Copy code
+
+Recent Scam Alerts in [Selected State]
+Example
+Copy code
+
+Recent Scam Alerts in Andhra Pradesh
+Display swipeable carousel flashcards.
+Each flashcard contains
+Scam Title
+Example Message
+Prevention Tip
+Reported Date
+Example
+Title
+Copy code
+
+Courier Delivery Scam
+Message
+Copy code
+
+Your parcel is waiting.
+Pay ₹50 delivery fee to release shipment.
+Tip
+Copy code
+
+Delivery companies never request payment through unknown links.
+Date
+Copy code
+
+Reported: March 5, 2026
+Flashcard design
+• glowing cyber border
+• dark background
+• neon accents
+• smooth swipe animation
+Add button
+Copy code
+
+Change State
+When pressed
+Flashcards disappear
+Map appears again
+Map and flashcards must never appear together.
+Dashboard 4 – Cyber Runner Game
+Title
+Copy code
+
+Cyber Runner Training
+Before starting game
+User must select an avatar.
+Avatars must be cartoon or anime characters.
+Examples
+Copy code
+
+Cyber Ninja
+AI Guardian
+Security Hacker
+Tech Robot
+Avatars should have running animation.
+Game Environment
+Cyberpunk environment.
+Visual style
+• neon running track
+• glowing grid floor
+• digital city background
+• particle trail behind avatar
+The avatar runs automatically forward.
+Game Mechanics
+Two message gates appear ahead.
+Each gate displays a message.
+One message is safe.
+One message is a scam.
+Example
+Left Gate
+Copy code
+
+Verify your bank account immediately using this link
+Right Gate
+Copy code
+
+Your order has been shipped
+Player taps the gate to choose path.
+Game Levels
+Each level
+Copy code
+
+10 gates
+Difficulty progression
+Copy code
+
+Level 1–3   Beginner
+Level 4–7   Intermediate
+Level 8–10  Advanced
+Beginner Levels
+Messages must be obvious.
+Example scams
+Copy code
+
+Your account is suspended. Verify now.
+Claim your lottery prize immediately.
+Safe messages
+Copy code
+
+Your Amazon order has been shipped.
+Your Netflix subscription was renewed.
+Intermediate Levels
+Messages become more realistic.
+Example
+Copy code
+
+Update your account information to avoid temporary suspension.
+Advanced Levels
+Use subtle phishing tricks.
+Example
+Copy code
+
+PayPaI security alert
+(fake letter I)
+Example domain
+Copy code
+
+secure-bank-update.xyz
+Scoring System
+Correct answer
+Copy code
+
++10 points
+Wrong answer
+Copy code
+
+-5 points
+Display top HUD
+Copy code
+
+Score
+Progress bar
+Gate number
+Example
+Copy code
+
+Score: 40
+Progress: 4/10
+Level Completion Screen
+Display result
+Example
+Copy code
+
+Score: 85
+Rank: Scam Spotter
+Ranking system
+Copy code
+
+90–100 Cyber Defender
+70–89 Scam Spotter
+50–69 Beginner
+Below 50 Needs Training
+Unlock rewards
+• avatars
+• badges
+• new levels
+Dashboard 5 – Profile
+Title
+Copy code
+
+User Profile
+Display
+Avatar
+Emails scanned
+Scams detected
+Game score
+Achievements
+Example badges
+Copy code
+
+Scam Hunter
+Cyber Defender
+Phishing Expert
+Design like a cyber achievement dashboard.
+Cyber Touch Effects
+Instead of a cursor, implement cyber themed touch animations.
+When user taps screen
+Show neon ripple pulse.
+Color palette
+Copy code
+
+Cyan #22D3EE
+Electric Blue #3B82F6
+Purple #A855F7
+Apply effects to
+Buttons
+Map selections
+Game gates
+Correct gate
+Copy code
+
+green glow
+Wrong gate
+Copy code
+
+red glitch flash
+Folder Structure
+Generate clean modular structure
+Copy code
+
+src
+ ├ screens
+ ├ components
+ ├ navigation
+ ├ services
+ ├ game
+ ├ assets
+Dataset Example
+Include scam dataset
+Copy code
+
+{
+state: "Andhra Pradesh",
+title: "Courier Delivery Scam",
+message: "Your parcel is waiting. Pay ₹50 delivery fee.",
+tip: "Never pay unknown delivery charges.",
+date: "2026-03-05"
+}
+Flashcards should filter by selected state.
+Final Requirements
+Ensure
+• the app runs correctly with Expo
+• smooth animations are implemented
+• swipe navigation works
+• runner game works properly
+• cybersecurity theme is consistent
+• modular code is generated
+Output a complete working React Native Expo project.

@@ -1,0 +1,28 @@
+﻿Starting project at C:\Users\VAMSI KRISHNA\OneDrive\Desktop\scam detection\Email-Scam-Shield
+React Compiler enabled
+Metro is running in CI mode, reloads are disabled. Remove CI=true to enable watch mode.
+Starting Metro Bundler
+node.exe : CommandError: 
+failed to start tunnel
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (CommandEr  
+  ror: failed to start tunn   
+ el:String) [], RemoteExce    
+ption
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+
+remote gone away
+
+Check the Ngrok status page 
+for outages: 
+https://status.ngrok.com/
